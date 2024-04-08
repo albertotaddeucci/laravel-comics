@@ -1,0 +1,35 @@
+@mixin centered {
+    margin-inline: auto;
+    max-width: 1260px;
+}
+
+@mixin btn-primary($color) {
+    padding: 10px;
+    border: 2px solid $color;
+
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+
+@mixin btn-secondary($color) {
+    padding: 10px 60px;
+    border: 2px solid $color;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: $color;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
