@@ -17,8 +17,21 @@ Route::get('/', function () {
 
     $comics = config("db");
 
+    $navLinks = [
+        "Characters",
+        "Comics",
+        "Movies",
+        "Tv",
+        "Games",
+        "Collectibels",
+        "Videos",
+        "Fans",
+        "News",
+        "Shop",
+    ];
+
     // dd($comics);
 
 
-    return view('home', compact('comics'));
+    return view('home', compact('comics', 'navLinks'));
 })->name('home');
