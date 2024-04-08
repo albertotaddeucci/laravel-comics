@@ -5,7 +5,7 @@
 @section('content')
 
 <main id="home">
-    <div id="jumbo"></div>
+    {{-- <div id="jumbo"></div> --}}
     
     <div class="comics-container">
 
@@ -17,14 +17,18 @@
                 </div>
         
                 @foreach ($comics as $comicItem)
+                
                     
                 <div class="comic">
-                    <div>
-                        <img src="{{$comicItem['thumb']}}" alt="">
-                    </div>
-                    <span>
-                        {{ $comicItem['title'] }}
-                    </span>
+                    <a href="{{route('comic')}}">
+                        <div>
+                            <img src="{{$comicItem['thumb']}}" alt="">
+                        </div>
+                        <span>
+                            {{ $comicItem['title'] }}
+                        </span>
+                    
+                    </a>
     
                 </div>
                 @endforeach
@@ -40,21 +44,23 @@
         <div class="wrapper">
 
             @foreach ($cards as $cardItem)
-
-            <div class="cardItem">
+            <div class="cardItem"  >
                 <div>
-                    <img src="{{ Vite::asset('resources' . $cardItem['image'] ) }}" alt="">
+                    <img  src="{{ Vite::asset('resources' . $cardItem['image'] ) }}" alt="">
                 </div>
                 <div>
                     {{ $cardItem['text'] }}
                 </div>
 
             </div>
+            
 
+            
             @endforeach
-
+            
         </div>
     </div>
+    
     
 </main>
 
