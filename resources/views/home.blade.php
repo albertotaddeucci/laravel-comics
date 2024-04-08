@@ -6,9 +6,7 @@
 
 <main id="home">
     <div id="jumbo"></div>
-    <div class="container">
-        
-    </div>
+    
     <div class="comics-container">
 
         <div class="container">
@@ -36,6 +34,26 @@
         </div>
     
         <button>Load More</button>
+    </div>
+
+    <div id="cards">
+        <div class="wrapper">
+
+            @foreach ($cards as $cardItem)
+
+            <div class="cardItem">
+                <div>
+                    <img src="{{ Vite::asset('resources' . $cardItem['image'] ) }}" alt="">
+                </div>
+                <div>
+                    {{ $cardItem['text'] }}
+                </div>
+
+            </div>
+
+            @endforeach
+
+        </div>
     </div>
     
 </main>
