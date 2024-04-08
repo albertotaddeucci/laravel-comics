@@ -3,9 +3,10 @@
     <div class="wrapper">
 
         <div class="link-lists">
+            <div class="row">
 
+            </div>
             @foreach ($lists as $listItem)
-
             <div class="lists">
                 <h3>{{ $listItem['title'] }}</h3>
                 <ul>
@@ -20,14 +21,16 @@
 
             </div>
             @endforeach
+
+
         </div>
-
-
+        
+        
         <div>
-
+            
             <img id="logo-bg" src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
         </div>
-
+        
         
     </div>
     

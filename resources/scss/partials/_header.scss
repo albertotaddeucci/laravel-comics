@@ -1,5 +1,19 @@
 header {
 
+    .banner {
+        background-color: $primaryColor;
+        color: white;
+        font-weight: bold;
+        font-size: 0.8em;
+
+        text-align: end;
+
+        .container {
+            display: block;
+        }
+
+    }
+
     #jumbo {
 
         background-image: url(../img/jumbotron.jpg);

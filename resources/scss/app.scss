@@ -114,3 +114,52 @@
         }
     }
 }
+
+#comic {
+
+    .blu-line {
+        padding: 30px;
+        background-color: $primaryColor;
+
+        .container {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+
+                transform: translateY(-95%);
+
+                width: 200px;
+
+                border: 2px solid white;
+
+
+            }
+        }
+
+
+    }
+
+    .price {
+        background-color: #55ba59;
+
+        strong {
+            color: white
+        }
+
+        span {
+            color: #b9ff8a;
+        }
+
+
+    }
+
+    #tile {
+        img {
+            width: 50px;
+            filter: invert(.2)
+        }
+    }
+}
